@@ -1,0 +1,99 @@
+main{
+    display: flex;
+    padding: 7.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-name{
+    font-size: 24px;
+    font-weight: normal;
+}
+.profile-story{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    display: flex;
+}
+.profile-area{
+    display: flex;
+    border: solid #008156 1.5px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, .1);
+    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 620px;
+    min-width: 550px;
+    max-height: 320px;
+}
+.profile-img{
+    display: flex;
+}
+.profile-text-area{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.reservation-button{
+    display: flex;
+}
+.portfolio-area{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-top: 80px;
+    max-width: auto;
+    float: none;
+}
+.portfolio-img{
+    display: flex;
+    margin: 10px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+}
+.portfolio-img {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #acacac;
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+}
+
+.portfolio-img:hover {
+  background: linear-gradient( #d3d3d3 0%,#d3d3d3 70%, black 100%);
+}
+
+#photo-day{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+}
+#photo-pgp{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0;
+}
+
+.portfolio-img:hover #photo-day{
+  color: white;
+  opacity: 1;
+}
+
+.portfolio-img:hover #photo-pgp{
+    color: white;
+    opacity: 1;
+  }

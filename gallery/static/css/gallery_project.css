@@ -1,0 +1,706 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 162px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 800px;
+}
+
+.logo {
+  margin-top: 80px;
+  margin-left: 128px;
+  margin-right: 142px;
+  cursor: pointer;
+}
+
+.upper-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 1390px;
+  height: 120px;
+}
+
+.inner-nav-btn {
+  color: #ffd800;
+  font-family: "AD-B";
+  font-size: 20px;
+  margin-left: 60px;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.inner-nav-btn:hover {
+  opacity: 100%;
+}
+
+.nav-pj {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "AD-B";
+  font-size: 28px;
+  color: #ffd800;
+  width: 200px;
+  height: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffd800;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.nav-loc {
+  display: flex;
+  width: 44px;
+  flex-wrap: nowrap;
+  margin-right: 44px;
+  font-family: "AD-B";
+  font-size: 24px;
+  color: #000000;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.nav-loc:hover {
+  opacity: 100%;
+}
+
+.nav-pr {
+  display: flex;
+  width: 88px;
+  flex-wrap: nowrap;
+  margin-left: 44px;
+  font-family: "AD-B";
+  font-size: 24px;
+  color: #000000;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.nav-pr:hover {
+  opacity: 100%;
+}
+
+.banner {
+  display: flex;
+  width: 1920px;
+  height: 600px;
+  background-color: #ffd800;
+}
+
+/* div 클래스 속성 */ 
+
+.pj-1 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  left: 370px;
+  top: 1040px;
+  background-color: black;
+}
+
+.pj-2{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: red;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-3{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: blue;
+  right: 370px;
+  top: 2400px;
+}
+
+.pj-4{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 3020px 
+}
+
+.pj-5{
+  position: absolute;
+  width: 720px;
+  height: 500px;
+  background-color: black;
+  left: 264px;
+  top: 3540px
+}
+/* 페이지 2 */
+.pj-6{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-7{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 1560px;
+}
+
+.pj-8{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: red;
+  left: 370px;
+  top: 2180px;
+}
+
+.pj-9{
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  left: 370px;
+  top: 3020px;
+  background-color: blue;
+}
+
+.pj-10{
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  background-color: olive;
+  right: 370px;
+  top: 3170px;
+}
+/* 페이지 3 */
+.pj-11{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-12{
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  background-color: red;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-13{
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  background-color: blue;
+  right: 370px;
+  top: 2230px;
+}
+
+.pj-14{
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  background-color: green;
+  left: 370px;
+  top: 2600px;
+}
+
+.pj-15{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 3420px;
+}
+
+.pj-16{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 4260px;
+}
+
+.pj-17{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 4780px;
+}
+
+.pj-18{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 5400px;
+}
+/* 페이지 4 */
+.pj-19{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-20{
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  background-color: black;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-21{
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  background-color: black;
+  right: 370px;
+  top: 2030px;
+}
+
+.pj-22{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 2760px;
+}
+/* 페이지 5 */
+.pj-23{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-24{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-25{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 2400px;
+}
+
+.pj-26{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 3020px;
+}
+/* 페이지 6 */
+.pj-27{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-28{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-29{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 2400px;
+}
+
+.pj-30{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 3020px;
+}
+
+.pj-31{
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  background-color: black;
+  left: 370px;
+  top: 3860px;
+}
+
+.pj-32{
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  background-color: black;
+  right: 370px;
+  top: 4140px;
+}
+
+.pj-33{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 5060px;
+}
+
+.pj-34{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: red;
+  left: 370px;
+  top: 6120px;
+}
+
+.pj-35{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: blue;
+  right: 370px;
+  top: 5900px;
+}
+
+.pj-36{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: green;
+  right: 370px;
+  top: 6360px;
+}
+/* 페이지 7 */
+.pj-37{
+  position: absolute;
+  width: 1188px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-38{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-39{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 2400px;
+}
+
+.pj-40{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: red;
+  left: 370px;
+  top: 3240px;
+}
+
+.pj-41{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: blue;
+  right: 370px;
+  top: 3020px;
+}
+
+.pj-42{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: green;
+  right: 370px;
+  top: 3480px;
+}
+
+.pj-43{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 4040px;
+}
+/* 페이지 8 */
+.pj-44{
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  background-color: red;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-45{
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  background-color: blue;
+  right: 370px;
+  top: 1040px;
+}
+
+.pj-46{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 2060px;
+}
+
+.pj-47{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 2580px;
+}
+
+.pj-48{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 3200px;
+}
+
+.pj-49{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: red;
+  left: 370px;
+  top: 4260px;
+}
+
+.pj-50{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: blue;
+  right: 370px;
+  top: 4040px;
+}
+
+.pj-51{
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  background-color: green;
+  right: 370px;
+  top: 4500px;
+}
+/* 페이지 9 */
+.pj-52{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 1040px;
+}
+
+.pj-53{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  left: 370px;
+  top: 1880px;
+}
+
+.pj-54{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: black;
+  right: 370px;
+  top: 2400px;
+}
+
+.pj-55{
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  background-color: red;
+  left: 370px;
+  top: 3020px;
+}
+
+.pj-56{
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  background-color: blue;
+  right: 370px;
+  top: 3170px;
+}
+
+.pj-57{
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  background-color: black;
+  left: 370px;
+  top: 3900px;
+}
+
+.pj-58{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: red;
+  right: 370px;
+  top: 4740px;
+}
+
+.pj-59{
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  background-color: blue;
+  left: 370px;
+  top: 5260px;
+}
+.popbox {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  left: 1337px;
+  top: 140px;
+  width: 270px;
+  height: 280.55px;
+  background-image: url(../img/popbox_border.svg);
+  text-align: center;
+}
+
+.login-title {
+  font-family: "AD-B";
+  font-size: 26px;
+  line-height: 50px;
+  color: #008156;
+  margin-top: 42px;
+}
+
+.login-content {
+  font-family: "AD-SB";
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[id="remember-check"] {
+  display: none;
+}
+
+input[id="remember-check"] + label {
+  padding-left: 24px;
+  font-family: "AD-SB";
+  font-size: 17px;
+  color: #000000;
+  opacity: 80%;
+  background: url("../img/check_unselected.svg") no-repeat;
+  cursor: pointer;
+}
+
+input[id="remember-check"]:checked + label {
+  background: url("../img/check_selected.svg") no-repeat;
+}
+
+.login-btn {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  font-family: "AD-B";
+  font-size: 16px;
+  color: white;
+  background-color: #008156;
+  border-radius: 6px;
+  margin-top: 12px;
+}

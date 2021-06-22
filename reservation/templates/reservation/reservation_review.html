@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title>Mirim in Photo | 단체 예약</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/review.css' %}" type="text/css">
+</head>
+
+<body>
+    <a href="{% url 'mirim:index' %}">
+        <img class="logo" src="{% static 'img/logo.svg' %}" />
+    </a>
+    <main>
+        <nav>
+            <a href="{% url 'reservation:list' %}"><div class="nav-btn" id="btn-status">예약 현황</div></a>
+            <a href="{% url 'reservation:individual' %}"><div class="nav-btn" id="btn-individual">개인 예약</div></a>
+            <a href="{% url 'reservation:group' %}"><div class="nav-btn" id="btn-group">단체 예약</div></a>
+            <a href="{% url 'reservation:my_page' %}"><div class="nav-btn" id="btn-myrev">내 예약</div></a>
+            <a href="{% url 'account_logout' %}"><div class="logout-btn">로그아웃 ></div></a>
+        </nav>
+        <section>
+            <div class="inner-nav">
+                <div class="inner-nav-btn reservation">RESERVATION</div>
+                <a href="{% url 'gallery:entrance' %}"><div class="inner-nav-btn">GALLERY</div></a>
+            </div>
+            <div class="has-scroll-smooth">
+                <div class="body">
+                    <div class="main">
+                        <div class="text-container">
+                            <h3 class="Explanation">리뷰 작성</h3>
+                            <h4 class="Explanation2">작성하신 리뷰는 MIRIM IN PHOTO의 콘텐츠로 활용될 수 있습니다.<br>
+                                욕설 및 비하성 단어를 포함할 경우, 무통보 삭제될 수 있습니다.</h4>
+                        </div>
+                        <form method="post" action="{% url 'reservation:insertReview'%}">
+                        <div class="form-container">
+                            {% csrf_token %}
+                            <div class="container">
+                                <div class="item">
+                                    <h4>프로젝트 날짜</h4>
+                                </div>
+                                <div class="date-container">
+                                    <select class = "date-dropdown" name="date" style="width:750px; border : none;">
+                                        {% for r in reservations %}
+                                        <option value="{{r.date_str}}">{{r.date_str}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="item">
+                                    <h4>리뷰 제목</h4>
+                                </div>
+                                <input type="text" size="30" name="title" placeholder="제목을 입력해주세요" style="font-size: 15px;"
+                                    maxlength="50">
+                            </div>
+
+                            <div class="container">
+                                <div class="item">
+                                    <h4>리뷰 내용</h4>
+                                </div>
+                                <textarea class="review-content" name="content" type="text" size="30" placeholder="내용을 입력해주세요" style="font-size: 15px;"
+                                    maxlength="50"></textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="result-container">
+                            <input class="result" type="submit" value="작성하기" onclick="alert('작성되었습니다.')">
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Mirim in Photo | 예약현황</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/calendar_base.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/calendar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/calendar_dropdown.css' %}" type="text/css">
+</head>
+
+<body>
+    <a href="{% url 'mirim:index' %}">
+        <img class="logo" src="{% static 'img/logo.svg' %}" />
+    </a>
+     <main>
+        <nav>
+            <a href="{% url 'reservation:list' %}"><div class="nav-btn" id="btn-status">예약 현황</div></a>
+            <a href="{% url 'reservation:individual' %}"><div class="nav-btn" id="btn-individual">개인 예약</div></a>
+            <a href="{% url 'reservation:group' %}"><div class="nav-btn" id="btn-group">단체 예약</div></a>
+            <a href="{% url 'reservation:my_page' %}"><div class="nav-btn" id="btn-myrev">내 예약</div></a>
+            <a href="/accounts/logout"><div class="logout-btn">로그아웃 ></div></a>
+        </nav>
+        <section>
+            <div class="inner-nav">
+                <div class="inner-nav-btn">RESERVATION</div>
+                <a href="{% url 'gallery:entrance' %}"><div class="inner-nav-btn">GALLERY</div></a>
+            </div>
+
+            <div class="calendar">
+                <div class="header">
+                    <div id="date" style="display:none">{{p_list}}</div>
+                    <button class="nav-btn-c go-prev" onclick="prevMonth()"><img src="{% static 'img/icon_arrows_left.png' %}" width="10px" height="24px"></img></button>
+                    <div class="year-month"></div>
+                    <button class="nav-btn-c go-next" onclick="nextMonth()"><img src="{% static 'img/icon_arrows_right.png' %}" width="10px" height="24px"></img></button>
+                    <div class="nav">
+                        <div class="present">
+                            <button class="nav-btn-c go-today" style="color:white" onclick="goToday()">오늘</button>
+                        </div>
+                    </div>
+                    <div id="dropdown">
+                        <ul class="main">
+                            <li><a href="#">작가</a>
+                                <ul class="sub">
+                                    <li><a href="{% url 'reservation:list' %}?photographer=전해원">전해원</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=성진민">성진민</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=이서연">이서연</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=이예서">이예서</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=한나래">한나래</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=최민서">최민서</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=김정미">김정미</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=유예영">유예영</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=안세은">안세은</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=하사엘">하사엘</a></li>
+                                    <li><a href="{% url 'reservation:list' %}?photographer=김바다">김바다</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="main">
+                    <div class="days"></div>
+                    <div class="dates"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% load static %}
+    
+
+    <script src="{% static 'js/calendar.js'%}" defer></script>
+</body>
+
+</html>

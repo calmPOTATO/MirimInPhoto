@@ -1,0 +1,648 @@
+body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 162px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+  }
+
+  .logo {
+    margin-top: 80px;
+    margin-left: 128px;
+    margin-right: 142px;
+    cursor: pointer;
+  }
+
+  .upper-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1390px;
+    height: 120px;
+  }
+
+  .inner-nav-btn {
+    color: #ffd800;
+    font-family: "AD-B";
+    font-size: 20px;
+    margin-left: 60px;
+    opacity: 70%;
+    cursor: pointer;
+  }
+
+  .inner-nav-btn:hover {
+    opacity: 100%;
+  }
+
+  .nav-loc {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "AD-B";
+    font-size: 28px;
+    color: #ffd800;
+    width: 200px;
+    height: 80px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffd800;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .nav-pj {
+    display: flex;
+    width: 100px;
+    flex-wrap: nowrap;
+    margin-left: 44px;
+    font-family: "AD-B";
+    font-size: 24px;
+    color: #000000;
+    opacity: 40%;
+    cursor: pointer;
+  }
+
+  .nav-pj:hover {
+    opacity: 100%;
+  }
+
+  .nav-pr {
+    display: flex;
+    width: 55px;
+    flex-wrap: nowrap;
+    margin-left: 122px;
+    font-family: "AD-B";
+    font-size: 24px;
+    color: #000000;
+    opacity: 40%;
+    cursor: pointer;
+  }
+
+  .nav-pr:hover {
+    opacity: 100%;
+  }
+
+
+  .place_container {
+    display: flex;
+    margin-left: 212px;
+    width: 1497px;
+    height: 842px;
+  }
+
+  .mapimg {
+    width: 1300px;
+    height:840px;
+    margin-left: 96px;
+    margin-top:1px;
+  }
+
+   .pin1{
+    position: absolute;
+    top:520px;
+    left : 950px;
+  }
+  .pin2{
+    position: absolute;
+    top:550px;
+    left : 1350px;
+  }
+  .pin3{
+    position: absolute;
+    top:650px;
+    left : 1100px;
+  }
+  .pin4{
+    position: absolute;
+    top:610px;
+    left : 650px;
+  }
+  .pin5{
+    position: absolute;
+    top:470px;
+    left : 680px;
+  }
+
+  .place_info {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    margin-left: 212px;
+    width: 1497px;
+    font-family: "AD-B";
+    font-size: 28px;
+    color: #000000;
+  }
+
+  /* 교내 사진*/
+  .pl-1 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 1373px;
+    background-color: gray;
+  }
+  .pl-2 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 1933px;
+    background-color: black;
+  }
+
+  /* 옥상 사진*/
+  .pl-3 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 649px;
+    top: 1373px;
+    background-color: gray;
+  }
+  .pl-4 {
+    position: absolute;
+    width: 700px;
+    height: 880px;
+    left: 212px;
+    top: 2233px;
+    background-color: black;
+  }
+  .pl-5 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 812px;
+    top: 2396px;
+    background-color: gray;
+  }
+  .pl-6 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 1062px;
+    top: 2686px;
+    background-color: black;
+  }
+  .pl-7 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3273px;
+    background-color: gray;
+  }
+  .pl-8 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3833px;
+    background-color: black;
+  }
+
+
+  /* 학교 정문 */
+  .pl-9 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 430px;
+    top: 1373px;
+    background-color: gray;
+  }
+  .pl-10 {
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    left: 1009px;
+    top: 2233px;
+    background-color: black;
+  }
+  .pl-11 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 555px;
+    top: 2396px;
+    background-color: gray;
+  }
+  .pl-12 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 305px;
+    top: 2666px;
+    background-color: black;
+  }
+  .pl-13 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3273px;
+    background-color: gray;
+  }
+  .pl-14 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3833px;
+    background-color: black;
+  }
+  .pl-15 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 302px;
+    top: 4773px;
+    background-color: gray;
+  }
+  .pl-16 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 719px;
+    top: 4653px;
+    background-color: black;
+  }
+  .pl-17 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 1139px;
+    top: 4533px;
+    background-color: gray;
+  }
+  .pl-18 {
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    left: 302px;
+    top: 5350px;
+    background-color: black;
+  }
+  .pl-19 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 902px;
+    top: 5513px;
+    background-color: gray;
+  }
+  .pl-20 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 1152px;
+    top: 5803px;
+    background-color: black;
+  }
+  .pl-21 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 6390px;
+    background-color: gray;
+  }
+  .pl-22 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 6950px;
+    background-color: black;
+  }
+  .pl-23 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 1139px;
+    top: 7650px;
+    background-color: gray;
+  }
+  .pl-24 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 719px;
+    top: 7770px;
+    background-color: black;
+  }
+  .pl-25 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 302px;
+    top: 7890px;
+    background-color: gray;
+  }
+
+
+  /* 정원 */
+  .pl-26 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 430px;
+    top: 1373px;
+    background-color: gray;
+  }
+  .pl-27 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 302px;
+    top: 2473px;
+    background-color: black;
+  }
+  .pl-28 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 719px;
+    top: 2353px;
+    background-color: gray;
+  }
+  .pl-29 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 1139px;
+    top: 2233px;
+    background-color: black;
+  }
+  .pl-30 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3013px;
+    background-color: gray;
+  }
+  .pl-31 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3573px;
+    background-color: black;
+  }
+  .pl-32 {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    left: 510px;
+    top: 4273px;
+    background-color: gray;
+  }
+  .pl-33 {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    left: 930px;
+    top: 4393px;
+    background-color: black;
+  }
+  .pl-34 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 5173px;
+    background-color: gray;
+  }
+  .pl-35 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 5733px;
+    background-color: black;
+  }
+  .pl-36 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 1139px;
+    top: 6693px;
+    background-color: gray;
+  }
+  .pl-37 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 719px;
+    top: 6573px;
+    background-color: black;
+  }
+  .pl-38 {
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    left: 302px;
+    top: 6453px;
+    background-color: gray;
+  }
+  .pl-39 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 430px;
+    top: 7233px;
+    background-color: black;
+  }
+
+  /* 학교 뒷편 */
+  .pl-40 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 212px;
+    top: 1373px;
+    background-color: gray;
+  }
+  .pl-41 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 305px;
+    top: 2666px;
+    background-color: gray;
+  }
+  .pl-42 {
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    left: 1009px;
+    top: 2233px;
+    background-color: gray;
+  }
+  .pl-43 {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    left: 555px;
+    top: 2396px;
+    background-color: black;
+  }
+  .pl-44 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3273px;
+    background-color: gray;
+  }
+  .pl-45 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    left: 560px;
+    top: 3833px;
+    background-color: black;
+  }
+  .pl-46 {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    left: 930px;
+    top: 4750px;
+    background-color: gray;
+  }
+  .pl-47 {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    left: 510px;
+    top: 4630px;
+    background-color: black;
+  }
+  .pl-48 {
+    position: absolute;
+    width: 1060px;
+    height: 700px;
+    left: 430px;
+    top: 5510px;
+    background-color: gray;
+  }
+
+  .footer1 {
+    position: absolute;
+    bottom: -1933px;
+    height:300px;
+    width:100%;
+  }
+  .footer2 {
+    position: absolute;
+    bottom: -3833px;
+    height:300px;
+    width:100%;
+  }
+  .footer3 {
+    position: absolute;
+    bottom: -7890px;
+    height:300px;
+    width:100%;
+  }
+  .footer4 {
+    position: absolute;
+    bottom: -7233px;
+    height:300px;
+    width:100%;
+  }
+  .footer5 {
+    position: absolute;
+    bottom: -5510px;
+    height:300px;
+    width:100%;
+  }
+
+
+
+
+  .popbox {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 1337px;
+    top: 140px;
+    width: 270px;
+    height: 280.55px;
+    background-image: url(../img/popbox_border.svg);
+    text-align: center;
+  }
+
+  .login-title {
+    font-family: "AD-B";
+    font-size: 26px;
+    line-height: 50px;
+    color: #008156;
+    margin-top: 42px;
+  }
+
+  .login-content {
+    font-family: "AD-SB";
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    opacity: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  input[id="remember-check"] {
+    display: none;
+  }
+
+  input[id="remember-check"] + label {
+    padding-left: 24px;
+    font-family: "AD-SB";
+    font-size: 17px;
+    color: #000000;
+    opacity: 80%;
+    background: url("../img/check_unselected.svg") no-repeat;
+    cursor: pointer;
+  }
+
+  input[id="remember-check"]:checked + label {
+    background: url("../img/check_selected.svg") no-repeat;
+  }
+
+  .login-btn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    font-family: "AD-B";
+    font-size: 16px;
+    color: white;
+    background-color: #008156;
+    border-radius: 6px;
+    margin-top: 12px;
+  }

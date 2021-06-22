@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <title>Mirim in Photo | 개인 예약</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/reservation_.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/reservation_individual.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/calendar_reservation.css' %}" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <a href="{% url 'mirim:index' %}">
+        <img class="logo" src="{% static 'img/logo.svg' %}" />
+    </a>
+<main>
+    <nav>
+        <a href="{% url 'reservation:list' %}"><div class="nav-btn" id="btn-status">예약 현황</div></a>
+        <a href="{% url 'reservation:individual' %}"><div class="nav-btn" id="btn-individual">개인 예약</div></a>
+        <a href="{% url 'reservation:group' %}"><div class="nav-btn" id="btn-group">단체 예약</div></a>
+        <a href="{% url 'reservation:my_page' %}"><div class="nav-btn" id="btn-myrev">내 예약</div></a>
+        <a href="{% url 'account_logout' %}"><div class="logout-btn">로그아웃 ></div></a>
+    </nav>
+    <section>
+        <div class="inner-nav">
+            <div class="inner-nav-btn">RESERVATION</div>
+            <a href="{% url 'gallery:entrance' %}"><div class="inner-nav-btn">GALLERY</div></a>
+        </div>
+        <div  class = "has-scroll-smooth">
+            <div class="body">
+                <div class="main">
+                    <div class="text-container">
+                        <h3 class="Explanation">개인 예약 신청서</h3>
+                        <h4 class="Explanation2">1. 점심시간을 이용하여 원하는 공간에서 원하는 소품과 함께 촬영이 진행됩니다.<br>
+                            2. 촬영이 끝난 후 'About ME'에 따라 보정이 진행됩니다.<br>
+                            3. 지친 하루 끝에 미림의 추억이 담긴 사진이 메일로 전송됩니다.</h4>
+                    </div>
+                    <form action="{% url 'reservation:insertIndivid' %}" method="post">
+                    {% csrf_token %}
+                        <div class="form-container">
+                        <div class="container container1">
+                            <div class="item item1">
+                                <h4>학번</h4>
+                            </div>
+                            <input class="grade" type="text" size="30" placeholder="학번을 입력해주세요." maxlength="50" name="grade">
+                            <div class="item item2">
+                                <h4>이름</h4>
+                            </div>
+                            <input class="name1" type="text" size="30" placeholder="성함을 입력해주세요." maxlength="50"name="name">
+                        </div>
+
+                        <div class="container container5">
+                            <div class="item">
+                                <h4>이메일</h4>
+                            </div>
+                            <input type="text" size="40" placeholder="이메일을 입력해주세요." maxlength="50" name="email">
+                        </div>
+
+                        <div class="container container2">
+                            <div class="item">
+                                <h4>연락처</h4>
+                            </div>
+                            <input type="text" size="40" placeholder="연락처를 입력해주세요." maxlength="50" name="phone">
+                        </div>
+
+                        <div class="container container3">
+                            <div class="item" style="color: white;">
+                                <h4>작가 선택</h4>
+                            </div>
+                            <select class = "pg-dropdown" name="photo_g">
+                                <option value="전해원">&nbsp; 전해원</option>
+                                <option value="성진민">&nbsp; 성진민</option>
+                                <option value="한나래">&nbsp; 한나래</option>
+                                <option value="최민서">&nbsp; 최민서</option>
+                                <option value="이예서">&nbsp; 이예서</option>
+                                <option value="이서연">&nbsp; 이서연</option>
+                                <option value="안세은">&nbsp; 안세은</option>
+                                <option value="김바다">&nbsp; 김바다</option>
+                                <option value="김정미">&nbsp; 김정미</option>
+                                <option value="하사엘">&nbsp; 하사엘</option>
+                                <option value="유예영">&nbsp; 유예영</option>
+                                <option value="주진희">&nbsp; 주진희</option>
+                                <option value="양다연">&nbsp; 양다연</option>
+                                <option value="박유진">&nbsp; 박유진</option>
+                                <option value="장서영">&nbsp; 장서영</option>
+                            </select>
+                        </div>
+
+                        <div class="container container4"><br>
+                            <div class="item">
+                                <h4>날짜 선택</h4>
+                            </div>
+                            <div class="calender">
+                                <div class="header">
+                                    <div class="nav">
+                                        <h1 id="click_date" style="display: none;"></h1>
+                                        <button class="nav-btn-c go-prev" type="button" onclick="prevMonth()">
+                                            <img src="{% static 'img/icon_arrows_left.png' %}" width="10px" height="24px"></img>
+                                        </button>
+                                        <div class="year-month"></div>
+                                        <button class="nav-btn-c go-next" type="button" onclick="nextMonth()">
+                                            <img src="{% static 'img/icon_arrows_right.png' %}" width="10px" height="24px"></img>
+                                        </button>
+                                    </div>
+                                    <h2 style="color:black; font-size: 25px; margin-top: 5px;"></h2>
+                                    <div class="main">
+                                        <div class="days"></div>
+                                        <div class="dates">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="text" name="date" id="select_date" value="" />
+
+                        <div class="text-container">
+                            <h4 class="thank">참여해주셔서 감사합니다!<br>
+                                촬영 컨셉에 대한 논의는 메일 또는 카카오톡을 통해 진행됩니다.<br>
+                                촬영 중 교칙 위반으로 인한 불상사에 대해서는 도움을 드릴 수 없습니다.<br>
+                                주의사항을 숙지하신 후 신청해 주시기 바랍니다.
+                            </h4>
+                        </div>
+                        <div class="result-container">
+                            <input class="result" type="submit" value="신청하기" onclick="alert('신청되었습니다.')">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="{% static 'js/calendar_reservation.js'%}" defer></script>
+</body>
+</html>
+{% load static %}

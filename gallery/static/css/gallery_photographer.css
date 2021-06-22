@@ -1,0 +1,1004 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 162px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 700px;
+}
+
+.logo {
+  margin-top: 80px;
+  margin-left: 128px;
+  margin-right: 142px;
+  cursor: pointer;
+}
+
+.upper-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 1390px;
+  height: 120px;
+}
+
+.inner-nav-btn {
+  color: #ffd800;
+  font-family: "AD-B";
+  font-size: 20px;
+  margin-left: 60px;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.inner-nav-btn:hover {
+  opacity: 100%;
+}
+
+.nav-pr {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "AD-B";
+  font-size: 28px;
+  color: #ffd800;
+  width: 200px;
+  height: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffd800;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.nav-loc {
+  display: flex;
+  width: 44px;
+  flex-wrap: nowrap;
+  margin-right: 122px;
+  font-family: "AD-B";
+  font-size: 24px;
+  color: #000000;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.nav-loc:hover {
+  opacity: 100%;
+}
+
+.nav-pj {
+  display: flex;
+  width: 88px;
+  flex-wrap: nowrap;
+  margin-right: 44px;
+  font-family: "AD-B";
+  font-size: 24px;
+  color: #000000;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.nav-pj:hover {
+  opacity: 100%;
+}
+
+.pr-area {
+  margin-left: 370px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.pr-name {
+  font-family: "AD-B";
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.pr-intro {
+  font-family: "AD-M";
+  font-size: 20px;
+}
+
+.p-1 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #000000;
+}
+
+.p-2 {
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+}
+
+.p-3 {
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  top: 1620px;
+  left: 970px;
+  background-color: #ff0606;
+}
+
+.p-4 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2540px;
+  left: 370px;
+  background-color: #dfecdf;
+}
+
+.p-5 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3060px;
+  left: 770px;
+  background-color: #003fec;
+}
+
+.p-6 {
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  top: 3680px;
+  left: 370px;
+  background-color: #990ffe;
+}
+
+.p-7 {
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  top: 3680px;
+  left: 970px;
+  background-color: #000000;
+} 
+
+/* 김정미 */
+.p-8 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+}
+
+.p-9 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1860px;
+  left: 770px;
+  background-color: #ff0606;
+}
+
+.p-10 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 2480px;
+  left: 370px;
+  background-color: #dfecdf;
+}
+
+.p-11 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 2631px;
+  left: 870px;
+  background-color: #003fec;
+}
+
+.p-12 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3360px;
+  left: 770px;
+  background-color: #990ffe;
+}
+
+.p-13 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3880px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+/* 안세은 */
+.p-14 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 500px;
+  left: 370px;
+  background-color: #dfecdf;
+} 
+
+.p-15 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1020px;
+  left: 770px;
+  background-color: #008156;
+} 
+
+.p-16 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 1640px;
+  left: 371px;
+  background-color: #990ffe;
+} 
+
+.p-17 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 1791px;
+  left: 870px;
+  background-color: #ffdfec;
+} 
+
+.p-18 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 2520px;
+  left: 370px;
+  background-color: #003fec;
+} 
+
+.p-19 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3360px;
+  left: 770px;
+  background-color: #000000;
+} 
+
+.p-20 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3880px;
+  left: 370px;
+  background-color: #ff0606;
+} 
+
+/* 양다연 */
+.p-21 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 526px;
+  left: 370px;
+  background-color: #dfecdf;
+} 
+
+.p-22 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1046px;
+  left: 770px;
+  background-color: #008156;
+} 
+
+.p-23 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 1666px;
+  left: 370px;
+  background-color: #990ffe;
+} 
+
+.p-24 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2506px;
+  left: 770px;
+  background-color: #ffdfec;
+} 
+
+.p-25 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3026px;
+  left: 370px;
+  background-color: #003fec;
+} 
+
+.p-26 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 3646px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+.p-27 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 4486px;
+  left: 370px;
+  background-color: #ff0606;
+} 
+
+.p-28 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 5006px;
+  left: 770px;
+  background-color: #e574f0;
+} 
+
+/* 유예영 */
+.p-29 {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  top: 500px;
+  left: 370px;
+  background-color: #dfecdf;
+} 
+
+.p-30 {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  top: 605px;
+  left: 970px;
+  background-color: #008156;
+} 
+
+.p-31 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 1239px;
+  left: 370px;
+  background-color: #990ffe;
+} 
+
+.p-32 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 1390px;
+  left: 870px;
+  background-color: #ffdfec;
+} 
+
+.p-33 {
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  top: 2239px;
+  left: 370px;
+  background-color: #003fec;
+} 
+
+.p-34 {
+  position: absolute;
+  width: 580px;
+  height: 900px;
+  top: 2239px;
+  left: 970px;
+  background-color: #000000;
+} 
+
+.p-35 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 3558px;
+  left: 370px;
+  background-color: #ff0606;
+} 
+
+.p-36 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 3407px;
+  left: 1070px;
+  background-color: #e574f0;
+} 
+
+/* 이서연 */
+.p-37 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #dfecdf;
+} 
+
+.p-38 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-39 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 1491px;
+  left: 870px;
+  background-color: #990ffe;
+} 
+
+.p-40 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2220px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-41 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2740px;
+  left: 770px;
+  background-color: #003fec;
+} 
+
+.p-42 {
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  top: 3360px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+.p-43 {
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  top: 3702px;
+  left: 970px;
+  background-color: #ff0606;
+} 
+
+.p-44 {
+  position: absolute;
+  width: 580px;
+  height: 700px;
+  top: 4080px;
+  left: 370px;
+  background-color: #e574f0;
+} 
+
+/* 이예서 */
+.p-45 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #dfecdf;
+} 
+
+.p-46 {
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-47 {
+  position: absolute;
+  width: 580px;
+  height: 800px;
+  top: 1620px;
+  left: 970px;
+  background-color: #990ffe;
+} 
+
+.p-48 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2540px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-49 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3060px;
+  left: 770px;
+  background-color: #003fec;
+} 
+
+.p-50 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 3680px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+.p-51 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 3831px;
+  left: 870px;
+  background-color: #ff0606;
+} 
+
+/* 최민서 */
+.p-52 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #e574f0;
+} 
+
+.p-53 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-54 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 1491px;
+  left: 870px;
+  background-color: #990ffe;
+} 
+
+.p-55 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2220px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-56 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 2740px;
+  left: 770px;
+  background-color: #003fec;
+} 
+
+.p-57 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 3360px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+.p-58 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 3511px;
+  left: 870px;
+  background-color: #ff0606;
+} 
+
+.p-59 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 4240px;
+  left: 370px;
+  background-color: #58bdec;
+} 
+
+/* 하사엘 */
+.p-60 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 500px;
+  left: 770px;
+  background-color: #e574f0;
+} 
+
+.p-61 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1020px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-62 {
+  position: absolute;
+  width: 1080px;
+  height: 720px;
+  top: 1640px;
+  left: 370px;
+  background-color: #990ffe;
+} 
+
+.p-63 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 2480px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-64 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 2631px;
+  left: 870px;
+  background-color: #003fec;
+} 
+
+.p-65 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 3359px;
+  left: 371px;
+  background-color: #000000;
+} 
+
+.p-66 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 4199px;
+  left: 369px;
+  background-color: #ff0606;
+} 
+
+.p-67 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 4719px;
+  left: 769px;
+  background-color: #58bdec;
+} 
+
+/* 한나래 */
+.p-68 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #e574f0;
+} 
+
+.p-69 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-70 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1860px;
+  left: 770px;
+  background-color: #990ffe;
+} 
+
+.p-71 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 2480px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-72 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 2631px;
+  left: 870px;
+  background-color: #003fec;
+} 
+
+.p-73 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3360px;
+  left: 770px;
+  background-color: #000000;
+} 
+
+.p-74 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3880px;
+  left: 370px;
+  background-color: #ff0606;
+} 
+
+/* 전해원 */
+.p-75 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 500px;
+  left: 370px;
+  background-color: #e574f0;
+} 
+
+.p-76 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1340px;
+  left: 370px;
+  background-color: #008156;
+} 
+
+.p-77 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1860px;
+  left: 770px;
+  background-color: #990ffe;
+} 
+
+.p-78 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 2480px;
+  left: 370px;
+  background-color: #ffdfec;
+} 
+
+.p-79 {
+  position: absolute;
+  width: 480px;
+  height: 760px;
+  top: 3320px;
+  left: 370px;
+  background-color: #003fec;
+} 
+
+.p-80 {
+  position: absolute;
+  width: 680px;
+  height: 480px;
+  top: 3471px;
+  left: 870px;
+  background-color: #000000;
+} 
+
+.p-81 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 4200px;
+  left: 370px;
+  background-color: #ff0606;
+} 
+
+/* 장서영 */
+.p-82 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 500px;
+  left: 370px;
+  background-color: #e574f0;
+} 
+
+.p-83 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 1020px;
+  left: 770px;
+  background-color: #008156;
+} 
+
+.p-84 {
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  top: 1860px;
+  left: 370px;
+  background-color: #990ffe;
+} 
+
+.p-85 {
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  top: 1640px;
+  left: 970px;
+  background-color: #ffdfec;
+} 
+
+.p-86 {
+  position: absolute;
+  width: 580px;
+  height: 440px;
+  top: 2100px;
+  left: 970px;
+  background-color: #003fec;
+} 
+
+.p-87 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 2660px;
+  left: 370px;
+  background-color: #000000;
+} 
+
+.p-88 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 3500px;
+  left: 770px;
+  background-color: #ff0606;
+} 
+
+.p-89 {
+  position: absolute;
+  width: 780px;
+  height: 500px;
+  top: 4020px;
+  left: 370px;
+  background-color: #fffb06;
+} 
+
+.p-90 {
+  position: absolute;
+  width: 1180px;
+  height: 720px;
+  top: 4640px;
+  left: 370px;
+  background-color: #7eff06;
+} 
+
+.popbox {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  left: 1337px;
+  top: 140px;
+  width: 270px;
+  height: 280.55px;
+  background-image: url(../img/popbox_border.svg);
+  text-align: center;
+}
+
+.login-title {
+  font-family: "AD-B";
+  font-size: 26px;
+  line-height: 50px;
+  color: #008156;
+  margin-top: 42px;
+}
+
+.login-content {
+  font-family: "AD-SB";
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[id="remember-check"] {
+  display: none;
+}
+
+input[id="remember-check"] + label {
+  padding-left: 24px;
+  font-family: "AD-SB";
+  font-size: 17px;
+  color: #000000;
+  opacity: 80%;
+  background: url("../img/check_unselected.svg") no-repeat;
+  cursor: pointer;
+}
+
+input[id="remember-check"]:checked + label {
+  background: url("../img/check_selected.svg") no-repeat;
+}
+
+.login-btn {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  font-family: "AD-B";
+  font-size: 16px;
+  color: white;
+  background-color: #008156;
+  border-radius: 6px;
+  margin-top: 12px;
+}

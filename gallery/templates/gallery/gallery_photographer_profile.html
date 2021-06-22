@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+    <title>Mirim in Photo | 갤러리</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/gallery_photographer.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/gallery_photographer_profile.css' %}" type="text/css">
+</head>
+
+<body style="height: 2300px">
+    <div class="upper-nav">
+        <a href="{% url 'mirim:index' %}">
+            <img class="logo" src="{% static 'img/logo.svg' %}" />
+        </a>
+        <div class="inner-nav">
+            {% if user.is_authenticated %}
+            <a class="popper" data-popbox="pop">
+                <a href="{% url 'reservation:list' %}"><div class="inner-nav-btn">RESERVATION</div></a>
+            </a>
+            {% else %}
+            <a class="popper" data-popbox="pop">
+                <div class="inner-nav-btn">RESERVATION</div>
+            </a>
+            {% endif %}
+             <a href="{% url 'gallery:entrance' %}">
+                <div class="inner-nav-btn">GALLERY</div>
+            </a>
+        </div>
+    </div>
+    <nav>
+        <a href="{% url 'gallery:entrance' %}">
+            <div class="nav-loc">위치</div>
+        </a>
+        <a href="{% url 'gallery:project' %}">
+            <div class="nav-pj">프로젝트</div>
+        </a>
+        <a href="{% url 'gallery:profile' %}">
+            <div class="nav-pr">작가</div>
+        </a>
+    </nav>
+    <main>
+        <div class="profile-1"><a href="{% url 'gallery:haewon' %}"><img src="{% static 'img/profile_1.png' %}"></a></div>
+        <div class="profile-2"><a href="{% url 'gallery:jinmin' %}"><img src="{% static 'img/profile_2.png' %}"></a></div>
+        <div class="profile-3"><a href="{% url 'gallery:seoyeon' %}"><img src="{% static 'img/profile_3.png' %}"></a></div>
+        <div class="profile-4"><a href="{% url 'gallery:yeseo' %}"><img src="{% static 'img/profile_4.png' %}"></a></div>
+        <div class="profile-5"><a href="{% url 'gallery:narae' %}"><img src="{% static 'img/profile_5.png' %}"></a></div>
+        <div class="profile-6"><a href="{% url 'gallery:minseo' %}"><img src="{% static 'img/profile_6.png' %}"></a></div>
+        <div class="profile-7"><a href="{% url 'gallery:jeongmi' %}"><img src="{% static 'img/profile_7.png' %}"></a></div>
+        <div class="profile-8"><a href="{% url 'gallery:yeyoung' %}"><img src="{% static 'img/profile_8.png' %}"></a></div>
+        <div class="profile-9"><a href="{% url 'gallery:seeun' %}"><img src="{% static 'img/profile_9.png' %}"></a></div>
+        <div class="profile-10"><a href="{% url 'gallery:sael' %}"><img src="{% static 'img/profile_10.png' %}"></a></div>
+        <div class="profile-11"><a href="{% url 'gallery:bada' %}"><img src="{% static 'img/profile_11.png' %}"></a></div>
+        <div class="profile-12"><a href="{% url 'gallery:jinhee' %}"><img src="{% static 'img/profile_12.png' %}"></a></div>
+        <div class="profile-13"><a href="{% url 'gallery:seoyoung' %}"><img src="{% static 'img/profile_13.png' %}"></a></div>
+        <div class="profile-14"><a href="{% url 'gallery:dayeon' %}"><img src="{% static 'img/profile_14.png' %}"></a></div>
+    </main>
+    <div id="pop" class="popbox">
+        <div class="login-title">LOGIN</div>
+        <div class="login-content">로그인 후 MIRIM IN PHOTO<br>
+            프로젝트에 참여해보세요!</div>
+        <div class="check-wrap">
+            <input type="checkbox" name="remember-check" id="remember-check" />
+            <label for="remember-check">로그인 상태 유지</label>
+        </div>
+        <div class="login-btn">구글 아이디로 로그인</div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+    <title>Mirim in Photo | 갤러리</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/gallery_photographer.css' %}" type="text/css">
+</head>
+{% load socialaccount %}
+{% providers_media_js %}
+<body style="height: 5620px">
+    <div class="upper-nav">
+        <a href="{% url 'mirim:index' %}">
+            <img class="logo" src="{% static 'img/logo.svg' %}" />
+        </a>
+        <div class="inner-nav">
+            {% if user.is_authenticated %}
+            <a class="popper" data-popbox="pop">
+                <a href="{% url 'reservation:list' %}"><div class="inner-nav-btn">RESERVATION</div></a>
+            </a>
+            {% else %}
+            <a class="popper" data-popbox="pop">
+                <div class="inner-nav-btn">RESERVATION</div>
+            </a>
+            {% endif %}
+             <a href="{% url 'gallery:entrance' %}">
+                <div class="inner-nav-btn">GALLERY</div>
+            </a>
+        </div>
+    </div>
+    <nav>
+        <a href="{% url 'gallery:backside' %}">
+            <div class="nav-loc">위치</div>
+        </a>
+        <a href="{% url 'gallery:project' %}">
+            <div class="nav-pj">프로젝트</div>
+        </a>
+        <a href="{% url 'gallery:profile' %}">
+            <div class="nav-pr">작가</div>
+        </a>
+    </nav>
+    <main style="border:none;">
+        <div class="pr-area">
+            <div class="pr-name">장서영 Jang SeoYoung</div>
+            <div class="pr-intro">"뭐든 잘 될 거야"</div>
+        </div>
+        <div class="photo-area">
+            {% for p in photos %}
+            <div class="p-{{p.img_num}}"><image src = "{{p.photo.url}}"/></div>
+            {% endfor %}
+        </div>
+    </main>
+    <div id="pop" class="popbox">
+        <div class="login-title">LOGIN</div>
+        <div class="login-content">로그인 후 MIRIM IN PHOTO<br>
+            프로젝트에 참여해보세요!</div>
+        <div class="check-wrap">
+            <input type="checkbox" name="remember-check" id="remember-check" />
+            <label for="remember-check">로그인 상태 유지</label>
+        </div>
+        <a href="{% provider_login_url 'google' %}"><div class="login-btn">구글 아이디로 로그인</div></a>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
+</body>
+
+</html>

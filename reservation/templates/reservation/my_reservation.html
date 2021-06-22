@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Mirim in Photo | 내 예약</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/review.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/myreservation.css' %}" type="text/css">
+    </head>
+
+    <body>
+        <a href="{% url 'mirim:index' %}">
+            <img class="logo" src="{% static 'img/logo.svg' %}" />
+        </a>
+        <main>
+            <nav>
+                <a href="{% url 'reservation:list' %}"><div class="nav-btn" id="btn-status">예약 현황</div></a>
+                <a href="{% url 'reservation:individual' %}"><div class="nav-btn" id="btn-individual">개인 예약</div></a>
+                <a href="{% url 'reservation:group' %}"><div class="nav-btn" id="btn-group">단체 예약</div></a>
+                <a href="{% url 'reservation:my_page' %}"><div class="nav-btn" id="btn-myrev">내 예약</div></a>
+                <a href="{% url 'account_logout' %}"><div class="logout-btn">로그아웃 ></div></a>
+            </nav>
+            <section>
+                <div class="inner-nav">
+                    <div class="inner-nav-btn">RESERVATION</div>
+                    <a href="{% url 'gallery:entrance' %}"><div class="inner-nav-btn">GALLERY</div></a>
+                </div>
+                <!-- <div class="scroll-animate"><span></span></div> -->
+                <div class="rev-container">
+                    {% for i in indiv %}
+                        {% if i.check == "확정 대기" %}
+                            <div class="waiting-rev">
+                                <div class="rev-content">
+                                    <div class="division-rev">
+                                        {% if i.person > 1%}
+                                            단체
+                                        {% else %}
+                                            개인
+                                        {% endif %}
+                                    </div>
+                                    <div class="date-rev">{{ i.date_str}}</div>
+                                    <div class="status-rev">확정 대기 중</div>
+                                    <div class="editor-rev-container">작가<div class="editor-rev">{{i.photographer}}</div></div>
+                                    <a href="{% url 'reservation:delReservation' date=i.date %}"><div class="cancel-btn">예약 취소</div></a>
+                                </div>
+                            </div>
+                        {% elif i.check == "예약 확정" %}
+                            <div class="confirm-rev">
+                                <div class="rev-content">
+                                    <div class="division-rev">
+                                        {% if i.person > 1%}
+                                            단체
+                                        {% else %}
+                                            개인
+                                        {% endif %}
+                                    </div>
+                                    <div class="date-rev">{{ i.date_str}}</div>
+                                    <div class="status-rev">예약 확정</div>
+                                    <div class="editor-rev-container">작가<div class="editor-rev">{{i.photographer}}</div></div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="complete-rev">
+                                <div class="rev-content">
+                                    <div class="division-rev">
+                                        {% if i.person > 1%}
+                                            단체
+                                        {% else %}
+                                            개인
+                                        {% endif %}
+                                    </div>
+                                     <div class="date-rev">{{ i.date_str}}</div>
+                                    <div class="status-rev">촬영 완료</div>
+                                    <div class="editor-rev-container">작가<div class="editor-rev">{{i.photographer}}</div></div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <a href="{% url 'reservation:review' %}"><img class="review-btn" src="{% static 'img/review_btn.png' %}" /></a>
+            </section>
+        </main>
+    </body>
+</html>
+{% load static %}

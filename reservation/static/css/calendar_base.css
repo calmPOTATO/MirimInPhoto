@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "AD-M";
+  }
+
+  main {
+    display: flex;
+    width: 1490px;
+    height: 900px;
+    border: solid #ffd800 4px;
+    margin-top: 30px;
+    margin-right: 70px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-right: solid #ffd800 4px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 1290px;
+  }
+
+  .logo {
+    margin-bottom: 700px;
+    margin-left: 128px;
+    margin-right: 142px;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    color: #ffd800;
+    font-family: "AD-SB";
+    font-size: 22px;
+    border-bottom: solid #ffd800 4px;
+    cursor: pointer;
+  }
+
+  .nav-btn:hover {
+    background-color: #ffd800;
+    color: white !important;
+  }
+
+  .inner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1190px;
+    height: 80px;
+  }
+
+  .inner-nav-btn {
+    color: #ffd800;
+    font-family: "AD-B";
+    font-size: 20px;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+
+  .logout-btn{
+    color: #ffd800;
+    font-family: "AD-B";
+    font-size: 20px;
+    margin-top: 440px;
+    margin-left: 24px;
+    cursor: pointer;
+  }

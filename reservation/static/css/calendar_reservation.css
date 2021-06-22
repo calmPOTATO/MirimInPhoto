@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "AD-M";
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .calendar {
+    width: 1180px;
+    height: 649px;
+    margin: 50px;
+  }
+  
+  .header {
+    margin: 30px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .year-month {
+    font-weight: bold;
+    font-size: 40px;
+    color:black;
+    display:inline;
+  }
+
+  .align-center { 
+    text-align: center; 
+  }
+
+  .present {
+    display: absolute;
+    width: 81px;
+    height: 42px;
+    /* border: 1px solid #FFD800; */
+    background-color:  #FFD800;
+    border-radius: 10px;
+  } 
+  
+  .nav-btn-c {
+    width: 28px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    line-height: 34px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .go-today {
+    width: 81px;
+    height: 42px;
+    /* border-left: 1px solid #333333;
+    border-right: 1px solid #333333; */
+  }
+  
+  .days {
+    display: flex;
+    margin: 25px 0 10px;
+  }
+  
+  .day {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  
+  .dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    /* border-top: 1px solid #008156;
+    border-bottom: 1px solid #008156;
+    border-right: 1px solid #008156;
+    border-left: 1px solid #008156; */
+    border-radius: 10px;
+  }
+  
+  .date {
+    width: calc(100% / 7);
+    padding-left: 10px;
+    text-align: center;
+    /* border-bottom-right-radius: 1px solid #FFD800;
+    border-bottom-left-radius: 1px solid #FFD800; */
+    border-radius: 10px;
+  }
+  
+  .day:nth-child(7n + 1),
+  .date:nth-child(7n + 1) {
+    color: #949494;
+  }
+  
+  .day:nth-child(7n),
+  .date:nth-child(7n) {
+    color: #949494;
+  }
+  
+  .other {
+    opacity: 0.3;
+  }
+  
+  .today {
+    position: relative;
+    color: #FFFFFF;
+  }
+  
+  .today::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 64px;
+    height: 64px;
+    display: block;
+    background-color: #FFD800;
+    border-radius: 50%;
+    content: '';
+  }
