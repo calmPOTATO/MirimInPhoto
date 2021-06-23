@@ -6,7 +6,6 @@
       <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gallery/__init__.py" afterDir="false" />
@@ -428,6 +427,7 @@
       <change afterPath="$PROJECT_DIR$/reservation/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
