@@ -21,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-
 #SECRET_KEY = 'django-insecure-cw9y1wdu=tuo%@u-8n_i5b^h2ul=+x0xsf9hzg8o5b!00ke0m&'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-cw9y1wdu=tuo%@u-8n_i5b^h2ul=+x0xsf9hzg8o5b!00ke0m&')
 
@@ -148,7 +147,6 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
-
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
